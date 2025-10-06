@@ -1,0 +1,18 @@
+From all logs: ts, uid, id.orig_h, id.orig_p, id.resp_h, id.resp_p
+
+
+Conn: All available fields
+DNS: rcode, AA, TC, answers
+HTTP: request_body_len, response_body_len, resp_mime_types, status_code, user_agent, proxied
+SSL/TLS: version, resumed, established, cipher
+Kerberos: error_msg
+Weird: name
+dce_rpc: named_pipe, endpoint, operation
+smb_files: action, path, name, size
+smb_mapping: All available fields
+RDP: All available fields
+NTLM: All available fields
+
+If there are any other logs present in the data that are not specified here, please just send all the fields in the log.
+
+Any log without a uid column can be excluded altogether.
