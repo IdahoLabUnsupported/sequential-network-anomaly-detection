@@ -7,7 +7,6 @@ It provides automatic, sequential-based detection of anomalous traffic.
 
 - [ Anomaly Detection Model](#-anomaly-detection-model)
 - [How  Works](#how--works)
-  - [Structural Anomalies](#structural-anomalies)
   - [Protocol Anomalies](#protocol-anomalies)
   - [Sequential Anomalies](#sequential-anomalies)
 - [Navigating This Repository](#navigating-this-repository)
@@ -30,26 +29,8 @@ The <NAME> model is a machine learning based system for detecting both known and
 over a network. <NAME> leverages graph neural networks and transformers to identify host-to-host connections that look
 out of the ordinary.
 
-The model comprises of three modular parts. Each is designed to detect anomalies pertaining to different aspects of a
-connection: structural, protocol, and sequential. 
-
-![model](assets/model-diagram.png)
-
-## Structural Anomalies
-Networks at our partner sites usually have well defined structures with well known servers. For instance, DNS requests
-are usually handled by one or two main DNS servers with static IPs. When devices on the network communicate with one
-another, they should respect this structure. We define "structural anomalies" to be connections that don't coincide
-with the normal flow of the established network. For instance, clients sharing requesting files from an unknown file
-server might be deemed anomalous.
-
-We detect these structural anomalies using a Graph Convolutional Network. Our GCN constructs a graph representation of 
-the computer network where devices are nodes and edges are connections. Using this GCN, we aim to have a deep 
-understanding of the structure and be able to tell when communications are out of place.
-
-The GCN creates embeddings to represent the network. We cluster these embeddings to begin building a vocabulary that
-will serve as the input to the final sequential model. 
-
-All code for the GCN can be found in models/<PUT THE PATH HERE>.
+The model comprises of two modular parts. Each is designed to detect anomalies pertaining to different aspects of a
+connection: protocol, and sequential. 
 
 ## Protocol Anomalies
 Communication protocols have strict patterns set by RFC. As such, we can know roughly what to expect for certain types
