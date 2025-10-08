@@ -26,7 +26,7 @@ It provides automatic, sequential-based detection of anomalous traffic.
 
 # How <NAME> Works
 The <NAME> model is a machine learning based system for detecting both known and Zero-Day attacks carried out
-over a network. <NAME> leverages graph neural networks and transformers to identify host-to-host connections that look
+over a network, <NAME> leveraging transformers to identify host-to-host connections that look
 out of the ordinary.
 
 The model comprises of two modular parts. Each is designed to detect anomalies pertaining to different aspects of a
