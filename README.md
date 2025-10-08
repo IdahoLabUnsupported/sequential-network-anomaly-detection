@@ -1,4 +1,4 @@
-# <NAME> Anomaly Detection Model
+# <NAME> Sequence-Based Anomaly Detection Model
 <NAME> is an anomaly detection model for any network with Corelight monitoring configured.
 It provides automatic, sequential-based detection of anomalous traffic.
 
