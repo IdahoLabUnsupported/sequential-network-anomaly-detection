@@ -1,3 +1,10 @@
+> [!WARNING]
+> **This repository has been archived and is no longer maintained.**
+> The code is provided for historical reference and may contain unpatched
+> or unknown vulnerabilities. It should not be used in production systems.
+
+---
+
 # <NAME> Sequence-Based Anomaly Detection Model
 <NAME> is an anomaly detection model for any network with Corelight monitoring configured.
 It provides automatic, sequential-based detection of anomalous traffic.
